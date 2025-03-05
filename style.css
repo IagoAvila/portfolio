@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+
+body {
+    background-color: #f7f7f7;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+header {
+    background-color: #ffffff !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 {
+    font-size: 3rem;
+    bottom: 27rem;
+    display: ruby-text;
+    position: absolute;
+    font-weight: lighter;
+    left: 23rem;
+    color: #525253;
+}
+
+body > main > div.name > h1 {
+    font-weight: 100;
+    font-size: 7rem;
+}
+.name {
+    position: absolute;
+    bottom: 19rem;
+    left: 23rem;
+    font-size: 49px;
+    color: rgb(95 0 133);
+}
+.button-50 {
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-50:focus {
+    text-decoration: none;
+  }
+  
+  .button-50:hover {
+    text-decoration: none;
+  }
+  
+  .button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-100%); /* Inicialmente fora da tela */
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.menu.active {
+    transform: translateX(0); /* Menu entra na tela quando ativo */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Botão de fechar */
+.close-btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+  /*desktop*/
+  @media screen and (min-width: 784px) {
+    * {
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* Ajuste do header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        box-shadow: 0px 4px 10px rgb(0 0 0 / 53%);
+        max-width: 1500px;
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 10;
+    }
+    
+    nav {
+        position: absolute;
+        left: 22rem;
+        top: 3rem;
+    }
+    nav ul {
+        display: flex;
+        gap: 30px;
+    }
+
+    nav ul a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    nav ul a:hover{
+        color: rgb(163 22 221);
+
+    }
+
+ 
+    button.button-51 {
+        padding: 12px 50px;
+      }
+  
+  
+      button.button-51 {
+        appearance: button;
+        background-color: #000;
+        background-image: none;
+        border: 1px solid #000;
+        border-radius: 30px;
+        box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 5px 10px 0;
+        overflow: visible;
+        padding: 12px 40px;
+        text-align: center;
+        text-transform: none;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        bottom: 15%;
+        position: absolute;
+        left: 37rem;
+    }
+
+            .button-50:hover,
+            .button-51:hover{
+                background-color: #fff;
+                color: #000;
+            }
+      .button-50 {
+          padding: 12px 50px;
+        }
+        .button-50 {
+            appearance: button;
+            background-color: #000;
+            background-image: none;
+            border: 1px solid #000;
+            border-radius: 30px;
+            box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 0 5px 10px 0;
+            overflow: visible;
+            padding: 12px 40px;
+            text-align: center;
+            text-transform: none;
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            bottom: 15%;
+            position: absolute;
+            left: 24rem;
+        }
+  
+    
+    
+    /* Ajuste no efeito de digitação */
+    .typing {
+        font-size: 20px;
+        left: 0;
+    }
+  
+    .typing {
+        font-family: 'Courier New', Courier, monospace;
+        overflow: hidden;
+        border-right: 4px solid black;
+        white-space: nowrap;
+        width: 0;
+        animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+        bottom: 38rem;
+        position: absolute;
+        font-size: 30px;
+        left: 380px;
+    }
+
+   
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 50%;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent; /* Faz o cursor piscar */
+        }
+    }
+
+        body > header > img {
+            width: 4.5rem;
+            border-radius: 101px;
+            left: 1%;
+            position: relative;
+            bottom: -4px;
+
+        }
+        .menu-btn {
+            cursor: pointer;
+            display: none;
+        }
+        li:hover {
+            color: rgb(163 22 221);
+        }
+        li {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        nav ul {
+            display: flex;
+            gap: 30px;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        i.devicon-linkedin-plain {
+            display: none;
+        }
+        #menu > img{
+            display: none;
+        }
+        .close-btn{
+            display: none;
+        }
+
+         
+        /*section projeto*/
+
+}
+
+/*mobile*/
+@media screen and (min-width: 320px) and (max-width: 783px) {
+    .name {
+        position: absolute;
+        bottom: 12rem;
+        left: 3rem;
+        font-size: 23px;
+        color: rgb(95 0 133);
+    }
+ /*foto iago*/
+ body > header > img {
+    height: 87px;
+    border-radius: 50px;
+    position: relative;
+    left: 37%;
+    bottom: -4px;
+}
+
+/*linha header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 53%);
+    max-width: 1511px;
+    width: 105%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+}
+nav {
+    display: none;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul a:hover{
+    color: rgb(163 22 221);
+
+}
+span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 {
+    font-size: 2rem;
+    bottom: 26rem;
+    display: ruby-text;
+    position: absolute;
+    font-weight: lighter;
+    left: 3rem;
+    color: #525253;
+}
+.typing {
+    font-size: 20px;
+    left: 0;
+}
+
+.typing {
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: scroll;
+    border-right: 4px solid black;
+    white-space: nowrap;
+    width: 0px;
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    bottom: 32rem;
+    position: absolute;
+    font-size: 14px;
+    left: 2rem;
+    gap: 30px;
+    display: flex
+;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Faz o cursor piscar */
+    }
+}
+
+
+button.button-51 {
+    padding: 12px 50px;
+  }
+
+
+  button.button-51 {
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 30px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 203px -45px;
+    overflow: visible;
+    padding: 11px 26px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    bottom: -11%;
+    position: absolute;
+    left: 13rem;
+}
+
+        .button-50:hover,
+        .button-51:hover{
+            background-color: #fff;
+            color: #000;
+        }
+  .button-50 {
+      padding: 12px 50px;
+    }
+    .button-50 {
+        appearance: button;
+        background-color: #000;
+        background-image: none;
+        border: 1px solid #000;
+        border-radius: 30px;
+        box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 5px 202px 0;
+        overflow: visible;
+        padding: 12px 22px;
+        text-align: center;
+        text-transform: none;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        bottom: -11%;
+        position: absolute;
+        left: 1rem;
+    }
+
+    
+    i.devicon-linkedin-plain {
+        display: block;
+    }
+    #menu > img{
+        display: block;
+    }
+
+    .menu a {
+        font-size: 20px;
+        color: #000;
+    }
+
+
+    header nav ul {
+        display: none; /* Esconde o menu tradicional */
+    }
+
+    header .menu-btn {
+        display: block; /* Mostra o botão de menu */
+    }
+
+    .close-btn {
+        font-size: 30px;
+        color: #000000;
+        position: absolute;
+        cursor: pointer;
+        top: 9rem;
+        z-index: 1;
+        left: 1rem;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 5;
+    }
+    body > main > div.name > h1 {
+        font-weight: 100;
+        font-size: 3rem;
+        display: ruby-text;
+    }
+}
+  
